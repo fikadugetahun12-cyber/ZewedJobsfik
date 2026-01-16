@@ -1,0 +1,165 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.query_webapk"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.use_as_origin"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.get_web_credentials"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.get_app_credentials"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.request_install"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.run_on_os_login"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.set_self_primary"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.query_navigation"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.query_file_handlers"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.query_protocol_handlers"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.digital_asset_links.trusted_web_activity"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.manage_activity"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.share_activity"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.query_launch_handler"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.get_notification_channels"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.set_notification_channels"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.manage_notification_policy"
+    ],
+    "target": {
+      "namespace": "web",
+      "site": "https://zewedjobs.com"
+    }
+  }
+]

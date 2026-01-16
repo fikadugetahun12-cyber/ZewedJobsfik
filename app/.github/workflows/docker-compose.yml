@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  zewedjobs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - SITE_URL=https://zewedjobs.com
+    restart: unless-stopped

@@ -1,0 +1,25 @@
+/assets/images/
+├── logo-72.png
+├── logo-96.png
+├── logo-128.png
+├── logo-144.png
+├── logo-152.png
+├── logo-192.png
+├── logo-384.png
+├── logo-512.png
+├── favicon.ico
+├── placeholder-job.png
+├── badge-72.png
+├── notification-bg.png
+├── action-view.png
+├── action-save.png
+├── screenshots/
+│   ├── mobile-1.png
+│   ├── mobile-2.png
+│   ├── desktop-1.png
+│   └── desktop-2.png
+└── shortcuts/
+    ├── search.png
+    ├── courses.png
+    ├── post-job.png
+    └── applications.png

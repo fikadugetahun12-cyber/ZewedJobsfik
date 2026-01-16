@@ -10,6 +10,7 @@
   "scope": "/",
   "lang": "en",
   "dir": "ltr",
+  "categories": ["business", "education", "employment"],
   "icons": [
     {
       "src": "/assets/images/logo-72.png",
@@ -60,19 +61,34 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["business", "education", "employment"],
   "screenshots": [
     {
-      "src": "/assets/images/screenshot-mobile.png",
+      "src": "/assets/images/screenshots/mobile-1.png",
       "sizes": "360x640",
       "type": "image/png",
-      "form_factor": "narrow"
+      "form_factor": "narrow",
+      "label": "ZewedJobs mobile job search"
     },
     {
-      "src": "/assets/images/screenshot-desktop.png",
+      "src": "/assets/images/screenshots/mobile-2.png",
+      "sizes": "360x640",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "ZewedJobs mobile job details"
+    },
+    {
+      "src": "/assets/images/screenshots/desktop-1.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "form_factor": "wide"
+      "form_factor": "wide",
+      "label": "ZewedJobs desktop homepage"
+    },
+    {
+      "src": "/assets/images/screenshots/desktop-2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "ZewedJobs desktop job listings"
     }
   ],
   "shortcuts": [
@@ -80,21 +96,105 @@
       "name": "Search Jobs",
       "short_name": "Search",
       "description": "Search for jobs in Ethiopia",
-      "url": "/search"
+      "url": "/?shortcut=search",
+      "icons": [
+        {
+          "src": "/assets/images/shortcuts/search.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Free Courses",
       "short_name": "Courses",
       "description": "Access free career courses",
-      "url": "/courses"
+      "url": "/?shortcut=courses",
+      "icons": [
+        {
+          "src": "/assets/images/shortcuts/courses.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Post a Job",
       "short_name": "Post Job",
       "description": "Post job openings for employers",
-      "url": "/post-job"
+      "url": "/?shortcut=post-job",
+      "icons": [
+        {
+          "src": "/assets/images/shortcuts/post-job.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "My Applications",
+      "short_name": "Applications",
+      "description": "View your job applications",
+      "url": "/?shortcut=applications",
+      "icons": [
+        {
+          "src": "/assets/images/shortcuts/applications.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     }
   ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": "auto"
+  },
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "protocol_handlers": [
+    {
+      "protocol": "web+zewedjobs",
+      "url": "/?protocol=%s"
+    }
+  ],
+  "related_applications": [],
   "prefer_related_applications": false,
-  "related_applications": []
+  "iarc_rating_id": "e84b072d-4b18-4f6a-8b58-3a5a8c7d9e1f",
+  "share_target": {
+    "action": "/share-target",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "file_handlers": [
+    {
+      "action": "/upload-resume",
+      "accept": {
+        "application/pdf": [".pdf"],
+        "application/msword": [".doc"],
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document": [".docx"]
+      },
+      "icons": [
+        {
+          "src": "/assets/images/file-handler.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ],
+      "name": "Upload Resume",
+      "launch_type": "single-client"
+    }
+  ],
+  "capture_links": "new-client",
+  "serviceworker": {
+    "src": "/sw.js",
+    "scope": "/",
+    "use_cache": true
+  }
 }
